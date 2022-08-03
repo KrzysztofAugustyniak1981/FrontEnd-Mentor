@@ -3,9 +3,7 @@ body {
     height: auto;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    text-align: center;
-    
-    
+    text-align: center; 
 }
 
 #top {
@@ -43,12 +41,12 @@ body {
 }
 #main-left {
     width: 320px;
-    margin: auto 0px auto 0px;
+    margin: auto 0px;
     border-top: 5px solid hsl(180, 62%, 55%);
 }
 #main-right {
     width: 320px;
-    margin: auto 0px auto 0px;
+    margin: auto 0px;
     border-top: 5px solid hsl(212, 86%, 64%);
 }
 .box {
@@ -78,4 +76,67 @@ svg {
 footer {
     margin-top: auto;
     text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        width: 95vw;
+    }
+    #top {
+        margin: 4px auto;
+        font-size: 14px;
+        text-align: center;
+    }
+    #top-bold {
+        margin: 2px 0px 8px;
+    }
+    #top-text {
+        font-size: 10px;
+    }
+    .box {
+        margin: 10px auto;
+        
+    }
+    #main {
+        align-content: center;
+    }
+}
+@media only screen and (min-width: 375px) {
+    body {
+        width: 90vw;
+        padding: 0;
+    }
+    #top {
+        width: 240px;
+        margin: 8px auto;
+        font-size: 14px;
+        text-align: center;
+    }
+    #top-bold {
+        margin: 2px 0px 8px;
+    }
+    #top-text {
+        font-size: 10px;
+    }
+    .box {
+        margin: 16px auto;
+        width: 220px;
+        height: 160px;
+        padding: 10px 8px;
+        
+    }
+    #main {
+        align-content: center;
+        padding: 0px;
+        width: 90vw;
+    }
+    #row {
+        
+        align-content: center;
+        padding: 0px;
+    }
+    svg {
+        bottom: 11px;
+        right: 11px;
+    }
 }
